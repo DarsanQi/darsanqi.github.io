@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
