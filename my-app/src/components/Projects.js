@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Portfolio = () => {
+const Projects = () => {
   return (
     <section id="projects">
       <h2>PROJECTS</h2>
@@ -26,4 +26,4 @@ const Portfolio = () => {
   );
 }
 
-export default Portfolio;
+export default Projects;
