@@ -1,29 +1,31 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url('../public/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('../../public/assets/fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Lato-Black';
-  src: url('../public/assets/fonts/Lato-Black.ttf') format('truetype');
+  src: url('../../public/assets/fonts/Lato-Black.ttf') format('truetype');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url('../public/assets/fonts/Roboto-Medium.ttf') format('truetype');
+  src: url('../../public/assets/fonts/Roboto-Medium.ttf') format('truetype');
   font-weight: normal;
 }
 @font-face {
   font-family: 'RobotoCondensed-Bold';
-  src: url('../public/assets/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  src: url('../../public/assets/fonts/RobotoCondensed-Bold.ttf') format('truetype');
   font-weight: normal;
 }
 body {
   font-family: 'Roboto-Regular', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #000;
   background-color: #000;
 }
 
@@ -62,7 +64,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px; /* Spacing between links */
+  margin-right: 60px; /* Spacing between links */
 }
 
 nav ul li a {

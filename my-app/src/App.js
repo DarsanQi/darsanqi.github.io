@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './Global.css';
-import './Home.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import './styling/Global.css';
+import './styling/Home.css';
+import './styling/About.css';
+import Header from './Subpages/Header';
+import Home from './Subpages/Home';
+import About from './Subpages/About';
+import Projects from './Subpages/Projects';
+import Resume from './Subpages/Resume';
+import Contact from './Subpages/Contact';
 
 function App() {
   return (

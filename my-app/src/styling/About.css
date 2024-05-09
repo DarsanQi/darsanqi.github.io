@@ -1,0 +1,56 @@
+/* Styles for the about section */
+#about {
+    padding: 120px 20px;
+    color: #fff;
+    font-family: 'Roboto-Regular', Arial, sans-serif;
+    border-color: #000;
+    background-color: #000;
+  }
+
+  .about-background-image {
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    width: 500px;
+    height: 600px;
+    background-image: url('/public/assets/images/about_flower.jpg'); /* Correct path */
+    background-size: cover; /* Cover the entire background */
+    background-position: right center; /* Center the image */
+    z-index: 1; /* Place it behind other elements */
+  }
+  
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    /*shift the content to the left*/
+    margin-left: -150px;
+    z-index: 2; 
+
+  }
+  
+  .about-greeting h1 {
+    font-family: 'Lato-Black', Arial, sans-serif;
+    font-size: 4em;
+    margin: 0;
+    line-height: 1;
+    
+
+  }
+  
+  .about-description {
+    margin-top: 20px;
+    z-index: 2; 
+    
+
+  }
+  
+  .about-description p {
+    font-size: 1.2em;
+    line-height: 1.5;
+   
+
+  }
+  
