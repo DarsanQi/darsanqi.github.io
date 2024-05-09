@@ -1,24 +1,4 @@
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('../public/fonts/Roboto-Regular.ttf') format('truetype');
-  font-weight: normal;
-}
 
-@font-face {
-  font-family: 'Lato-Black';
-  src: url('../public/fonts/Lato-Black.ttf') format('truetype');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Roboto-Medium';
-  src: url('../public/fonts/Roboto-Medium.ttf') format('truetype');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'RobotoCondensed-Bold';
-  src: url('../public/fonts/RobotoCondensed-Bold.ttf') format('truetype');
-  font-weight: normal;
-}
 
 /*==================================================Home====================================================
 =                                                                                                          =
@@ -31,11 +11,10 @@
 /* Ensure the home section takes full height and centers content */
 #home {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
-  background-color: #000; /* Black background */
-  border: 2px solid #000;
+  background-color: #010101; /* Black background */
+  border-color: #000;
   box-sizing: border-box; /* Ensure padding is included in width calculations */
   position: relative;
 }
@@ -46,13 +25,38 @@
   font-size: 6em;
   font-family: 'Lato-Black', Arial, sans-serif;
   text-align: center; /* Center the text within the element */
-  position: relative;
-  left: -330px; /* Offset by 50 pixels */
-  top: calc(-200px); /* Adjust the vertical position by -50 pixels */
+  position: absolute;
+  left: -150px; 
+  top: 100px; /* Adjust the vertical position by -50 pixels */
+  z-index: 2; /* Place it above the background image */
 }
 
+/* Example 2: Maintain aspect ratio with fixed width */
 
 
+.background-image {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 1200px;
+  height: 100%;
+  background-image: url('/public/assets/images/flower.jpg'); /* Correct path */
+  background-size: cover; /* Cover the entire background */
+  background-position: right center; /* Center the image */
+  z-index: 1; /* Place it behind other elements */
+}
+
+.home-about {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  text-align: center; /* Center the text within the element */
+  position: absolute;
+  width: 400px;
+  left: -200px; /* Adjust the horizontal position by 50 pixels */
+  top: 250px; /* Adjust the vertical position by 300 pixels */
+  z-index: 2; /* Place it above the background image */
+}
 
 /*==================================================Section=================================================
 =                                                                                                          =
