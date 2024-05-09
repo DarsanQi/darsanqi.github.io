@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import './Global.css';
+import './Home.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

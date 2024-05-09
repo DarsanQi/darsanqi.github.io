@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../public/fonts/Lato-Black.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../public/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src: url('../public/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+}
+body {
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #000;
+}
+
+
+
+/*==================================================Header==================================================
+=                                                                                                          =
+=                                                                                                          =
+===========================================================================================================*/
+
+
+/* Header Styles */
+nav {
+  position: fixed; /* Make the nav fixed */
+  top: 0;
+  left: 200px;
+  width: 100%; /* Full width */
+  height: 60px; /* Set a fixed height */
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 0 20px; /* Adjust padding to horizontal */
+  box-sizing: border-box; /* Include padding in width and height calculation */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically within the nav */
+}
+
+nav ul li {
+  margin-right: 20px; /* Spacing between links */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*==================================================Footer==================================================
+=                                                                                                          =
+=                                                                                                          =
+===========================================================================================================*/
+

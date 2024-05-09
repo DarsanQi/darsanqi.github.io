@@ -6,10 +6,10 @@ function Header() {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/">home</Link></li>
+        <li><Link to="/projects">projects</Link></li>
+        <li><Link to="/resume">resume</Link></li>
+        <li><Link to="/contact">contact</Link></li>
       </ul>
     </nav>
   );
