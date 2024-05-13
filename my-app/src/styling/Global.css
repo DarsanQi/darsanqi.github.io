@@ -1,3 +1,4 @@
+/* General Styles */
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 @font-face {
@@ -29,54 +30,47 @@ body {
   background-color: #000;
 }
 
-
-
 /*==================================================Header==================================================
 =                                                                                                          =
 =                                                                                                          =
 ===========================================================================================================*/
 
-
 /* Header Styles */
 nav {
-  position: fixed; /* Make the nav fixed */
   top: 0;
-  left: 180px;
-  width: 100%; /* Full width */
-  height: 60px; /* Set a fixed height */
+  width: 100%; 
+  height: 50%px; 
   display: flex;
-  flex-direction: row; /* Align items horizontally */
+  margin-left: 10%;
+  flex-direction: row; 
   justify-content: flex-start;
   align-items: center;
-  background-color: #000;
+  border: 2px solid #1b8adf;
   color: #fff;
-  padding: 0 20px; /* Adjust padding to horizontal */
-  box-sizing: border-box; /* Include padding in width and height calculation */
-  z-index: 1000; /* Ensure it stays on top */
+  box-sizing: border-box; 
+  z-index: 1000; 
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex; /* Align items horizontally */
-  align-items: center; /* Center items vertically within the nav */
+  display: flex; 
+  align-items: center; 
+  width: 100%; 
+  justify-content: space-between; 
 }
 
 nav ul li {
-  margin-right: 60px; /* Spacing between links */
+  margin: 0; 
 }
 
-
-
-/* Remove default underline for links */
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  border-radius: 5px; /* Optional: add some border radius */
-  padding: 10px; /* Add padding for better hover area */
-  background-color: black; /* Set initial background color */
-  transition: background-color 0.5s ease-in-out; /* Add transition for background color */
+  border-radius: 5px; 
+  padding: 10px; 
+  background-color: black; 
+  transition: background-color 0.5s ease-in-out; 
 }
 
 /* Add light pink background on hover */
@@ -86,42 +80,44 @@ nav ul li a:hover {
   border-radius: 5px; /* Optional: add some border radius */
 }
 
-
-
-/*==================================================Footer==================================================
-=                                                                                                          =
-=                                                                                                          =
-===========================================================================================================*/
-
-
-section {
-  padding: 40px 20px;
-  margin: auto;
-  background-color: #101010;
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
   
-  border-radius: 8px;
-  max-width: 800px;
+  nav ul {
+    flex-direction: row; /* Ensure items are aligned horizontally */
+    justify-content: space-between; /* Distribute space evenly between items */
+  }
   
+  nav ul li {
+    margin: 0; /* Remove default margin */
+  }
+  
+  nav ul li a {
+    padding: 10px; /* Add padding for better hover area */
+  }
+  
+  nav ul li a:hover {
+    background-color: #f7f6f7; /* Super light pink background */
+  }
 }
 
-section h2 {
-  color: #fff;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 2em;
-}
-
-section p, section a {
-  color: #ddd;
-  font-size: 1.2em;
-}
-
-section a {
-  color: #fff;
-  text-decoration: none;
-}
-
-section a:hover {
-  text-decoration: underline;
+/* PC View Styles */
+@media (min-width: 769px) {
+  nav {
+    margin-left: 10%;
+  }
+  
+  nav ul {
+    justify-content: flex-start; /* Align items to the start */
+  }
+  
+  nav ul li {
+    margin-right: 7px; /* Spacing between links */
+  }
 }
