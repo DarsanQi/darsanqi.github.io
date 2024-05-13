@@ -1,23 +1,24 @@
+
 const Projects = () => {
   return (
     <section id="projects">
-      <h2>PROJECTS</h2>
-      <div className="projects">
-        <div className="project">
-          <h3>Nios II Rocket Flight Path Simulator</h3>
-          <p>1</p>
+      <div className="project-content">
+        <div className="project-title">
+          <h1>Projects</h1>
         </div>
-        <div className="project">
-          <h3>FPGA Human Benchmark</h3>
-          <p>2</p>
-        </div>
-        <div className="project">
-          <h3>Arduino Car hello</h3>
-          <p>3</p>
-        </div>
-        <div className="project">
-          <h3>Ground up CPU architecture</h3>
-          <p>4</p>
+        <div className="project-name">
+          <p>
+            FPGA Human Benchmark
+          </p>
+          <p>
+            Custom ground up CPU architecture
+          </p>
+          <p>
+            Rocket Flight path simulator - NIOS Orbit
+          </p>
+          <p>
+            Arduino Car
+          </p>
         </div>
       </div>
     </section>

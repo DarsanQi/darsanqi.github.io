@@ -1,37 +1,39 @@
+/* Styles for the about section */
 #projects {
+  width: 100%; /* Ensures the container spans the full width of the viewport */
+  padding: 120px 20px;
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  color: #fff;
+  border-color: #fff;
+  background-color: #000;
+  
+  }
+
+  .project-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto; /* This centers the element horizontally */
+    z-index: 2; 
   }
 
 
-.project-title {
-    color: #fff;
-    font-size: 6em;
+  .project-title h1 {
     font-family: 'Lato-Black', Arial, sans-serif;
-    text-align: center; /* Center the text within the element */
-    position: absolute;
-    left: -150px; 
-    top: 100px; /* Adjust the vertical position by -50 pixels */
-    z-index: 2; /* Place it above the background image */
+    font-size: 5em;
+    margin: 0;
+    line-height: 1;
   }
 
+  .project-name {
+    margin-top: 20px;
+    z-index: 2; 
+  }
 
+  .about-description p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  
 
-.project {
-    background-color: #222;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.project h3 {
-color: #fff;
-border-bottom: 1px solid #fff;
-padding-bottom: 10px;
-margin-bottom: 10px;
-font-size: 1.5em;
-}
+  }
