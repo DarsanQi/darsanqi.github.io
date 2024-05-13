@@ -41,7 +41,7 @@ body {
 nav {
   position: fixed; /* Make the nav fixed */
   top: 0;
-  left: 200px;
+  left: 180px;
   width: 100%; /* Full width */
   height: 60px; /* Set a fixed height */
   display: flex;
@@ -67,13 +67,23 @@ nav ul li {
   margin-right: 60px; /* Spacing between links */
 }
 
+
+
+/* Remove default underline for links */
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  border-radius: 5px; /* Optional: add some border radius */
+  padding: 10px; /* Add padding for better hover area */
+  background-color: black; /* Set initial background color */
+  transition: background-color 0.5s ease-in-out; /* Add transition for background color */
 }
 
+/* Add light pink background on hover */
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #f7f6f7; /* Super light pink background */
+  color: #000; /* Change text color if needed */
+  border-radius: 5px; /* Optional: add some border radius */
 }
 
 
@@ -83,3 +93,35 @@ nav ul li a:hover {
 =                                                                                                          =
 ===========================================================================================================*/
 
+
+section {
+  padding: 40px 20px;
+  margin: auto;
+  background-color: #111;
+  
+  border-radius: 8px;
+  max-width: 800px;
+  
+}
+
+section h2 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+section p, section a {
+  color: #ddd;
+  font-size: 1.2em;
+}
+
+section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}

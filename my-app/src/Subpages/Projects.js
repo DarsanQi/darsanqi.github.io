@@ -12,7 +12,7 @@ const Projects = () => {
           <p>2</p>
         </div>
         <div className="project">
-          <h3>Arduino Car</h3>
+          <h3>Arduino Car hello</h3>
           <p>3</p>
         </div>
         <div className="project">
