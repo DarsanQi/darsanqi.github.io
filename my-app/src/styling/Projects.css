@@ -1,11 +1,12 @@
 /* Styles for the about section */
 #projects {
   width: 100%; /* Ensures the container spans the full width of the viewport */
-  padding: 120px 20px;
+  
   font-family: 'Roboto-Regular', Arial, sans-serif;
   color: #fff;
   border-color: #fff;
   background-color: #000;
+  padding-left: 20%; /* This ensures the content starts 20% from the left */
   
   }
 
@@ -37,3 +38,6 @@
   
 
   }
+
+
+  

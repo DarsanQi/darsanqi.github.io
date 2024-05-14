@@ -1,10 +1,15 @@
 /* Styles for the about section */
 #about {
-    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     color: #fff;
-    font-family: 'Roboto-Regular', Arial, sans-serif;
-    border-color: #000;
     background-color: #000;
+    border: 2px solid #df1b1b;   
+    box-sizing: border-box; 
+    position: relative;
+    overflow: hidden;
   }
 
   .about-background-image {
@@ -25,8 +30,6 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 800px;
-    /*shift the content to the left*/
-    margin-left: -150px;
     z-index: 2; 
 
   }
@@ -53,4 +56,47 @@
    
 
   }
+
+  /* Mobile Styles */
+@media (max-width: 768px) {
+  #home {
+    padding-left: 0%; /* Adjust padding for smaller screens */
+    margin-left: 0%;
+  }
+
+  .home-name {
+    font-size: 3em;
+  }
+
+  .home-about {
+    font-size: 1em;
+    margin-top: 5%;
+  }
+
+  .contact-icons a {
+    font-size: 2em;
+    margin: 0 10%;
+  }
+}
+
+/* PC View Styles */
+@media (min-width: 769px) {
+  #about {
+    padding-left: 0%; /* 20% padding from the left on larger screens */
+    margin-left: 10%;
+  }
+
+  .home-name {
+    margin-top: 1%; /* Adjust margin to position below navigation bar */
+  }
+
+  .home-about {
+    margin-top: 2%; /* Adjust spacing under the name */
+  }
+
+  .contact-icons a{
+     /* Adjust spacing under the about section */
+    margin-top: 5%;
+  }
+}
   

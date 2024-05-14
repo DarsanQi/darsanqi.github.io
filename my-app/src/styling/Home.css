@@ -13,7 +13,6 @@
   box-sizing: border-box; 
   position: relative;
   overflow: hidden;
-  padding-left: 20%; /* This ensures the content starts 20% from the left */
 }
 
 /* Styles for the name */
@@ -46,7 +45,6 @@
   font-family: 'Roboto-Medium', Arial, sans-serif;
   text-align: left; 
   z-index: 2;
-  margin: 30% 0;
 }
 
 /* Contact icons */
