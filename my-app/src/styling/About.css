@@ -10,21 +10,22 @@
     box-sizing: border-box; 
     position: relative;
     overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
-
-  .about-background-image {
+  .about-background-image
+  {
     position: absolute;
-    top: 80px;
-    left: 1000px;
-    width: 500px;
-    height: 600px;
-    background-image: url('/public/assets/images/about_flower.jpg'); /* Correct path */
-    background-size: cover; /* Cover the entire background */
-    background-position: right center; /* Center the image */
-    z-index: 1; /* Place it behind other elements */
+    top: 10%;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/images/about_flower.jpg');
+    background-size: cover; 
+    background-position: right center; 
+    z-index: 1; 
+    opacity: 1; /* Added opacity to ensure text is readable */
   }
-  
-  
   .about-content {
     display: flex;
     flex-direction: column;
@@ -33,16 +34,12 @@
     z-index: 2; 
 
   }
-  
   .about-greeting h1 {
     font-family: 'Lato-Black', Arial, sans-serif;
     font-size: 4em;
     margin: 0;
     line-height: 1;
-    
-
   }
-  
   .about-description {
     margin-top: 20px;
     z-index: 2; 
