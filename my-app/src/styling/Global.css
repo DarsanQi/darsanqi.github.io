@@ -48,7 +48,6 @@ nav {
   flex-direction: row; 
   justify-content: center;
   align-items: center;
-  border: 2px solid #1b8adf;
   color: #fff;
   box-sizing: border-box; 
   z-index: 1000; 
