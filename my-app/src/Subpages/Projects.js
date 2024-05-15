@@ -1,11 +1,11 @@
 const in_progress_projects = [
   {
-    title: "Project 1",
+    title: "CPU from scratch",
     image: "path/to/image1.jpg",
-    description: "This is a short description of project 1."
+    description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor."
   },
   {
-    title: "Project 2",
+    title: "RC Arduino",
     image: "path/to/image2.jpg",
     description: "This is a short description of project 2."
   },
@@ -23,17 +23,17 @@ const in_progress_projects = [
 
 const completed_projects = [
   {
-    title: "Project 1",
+    title: "Lazy Way",
     image: "path/to/image1.jpg",
     description: "This is a short description of project 1."
   },
   {
-    title: "Project 2",
+    title: "FPGA Human Benchmark",
     image: "path/to/image2.jpg",
     description: "This is a short description of project 2."
   },
   {
-    title: "Project 3",
+    title: "NIOS II Rocket Flight Path Simulator",
     image: "path/to/image3.jpg",
     description: "This is a short description of project 3."
   },
