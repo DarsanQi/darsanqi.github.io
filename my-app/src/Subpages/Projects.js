@@ -54,7 +54,7 @@ const Projects = () => {
           <div className="project-card" key={index}>
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
-              <h2 className="project-title">{project.title}</h2>
+              <p className="project-title">{project.title}</p>
               <p className="project-description">{project.description}</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Projects = () => {
           <div className="project-card" key={index}>
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
-              <h2 className="project-title">{project.title}</h2>
+              <p className="project-title">{project.title}</p>
               <p className="project-description">{project.description}</p>
             </div>
           </div>
