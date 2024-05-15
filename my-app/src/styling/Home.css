@@ -3,14 +3,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 80vh; 
+  height: 85vh; 
   background-color: #000; 
   /*border: 2px solid #df1b1b;*/
   box-sizing: border-box; 
   position: relative;
   overflow: hidden;
 }
-
 .home-name {
   color: #fff;
   font-size: 6em;
@@ -18,7 +17,6 @@
   text-align: left; 
   z-index: 2;
 }
-
 
 .home-background-image {
   position: absolute;

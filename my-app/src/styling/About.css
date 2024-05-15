@@ -1,22 +1,15 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden; 
-}
+
 .container {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "text image";
-  height: 100vh;
+  height: 85vh;
 }
 
 .mobile-container {
   position: relative;
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
