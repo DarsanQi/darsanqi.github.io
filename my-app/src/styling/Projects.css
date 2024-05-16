@@ -50,7 +50,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 35%; 
   background-color: #bca9a1; 
   color: white; 
@@ -66,6 +66,7 @@
   font-weight: 700;
   margin: 0;
 }
+
 
 .project-description {
   font-family: 'Lato', Arial, sans-serif;
@@ -87,7 +88,6 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  border: 2px solid #df1b1b;
 }
 
 .expanded-project {
@@ -99,6 +99,7 @@
   height: 60%;
   max-height: 70%;
   overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 8px;
   padding: 5%;
   box-sizing: border-box;
@@ -107,24 +108,44 @@
 }
 
 .expanded-project .project-image {
-  width: 80%;
+  
   height: auto;
 }
 
 .expanded-project .project-details {
   /*border: 2px solid #1b45df;*/
-  width: 100%;
+  border: 2px solid #19e8e5;
+  width:auto;
+  top:70%;
   background-color: #bca9a1; 
   color: white;
 }
 
+.expanded-project .github-button {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 .expanded-project .project-title {
+  position: relative;
+  top: -40%;
   font-size: 2em;
+  border: 2px solid #04c58b;
+  
 }
 
 .expanded-project .project-description {
   font-size: 1.2em;
   line-height: 1.5;
+  border: 2px solid #d8dedc;
+  text-align: center;
 }
 
 /* Desktop styles */

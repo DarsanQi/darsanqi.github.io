@@ -4,12 +4,14 @@ const in_progress_projects = [
   {
     title: "8 bit custom CPU",
     image: "path/to/image1.jpg",
-    description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor."
+    description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor.",
+    github: "https://github.com/DarsanQi/8-bit-custom-CPU"
   },
   {
     title: "RC Arduino",
     image: "path/to/image2.jpg",
-    description: "A remote controlled car, which is controlled using an Arduino and a custom built remote control. The car is built using a 3D printer and includes a camera that streams video to the remote control."
+    description: "A remote controlled car, which is controlled using an Arduino and a custom built remote control. The car is built using a 3D printer and includes a camera that streams video to the remote control.",
+    github: "https://github.com/DarsanQi/RC-Arduino"
   }
 ];
 
@@ -17,17 +19,20 @@ const completed_projects = [
   {
     title: "Lazy Way",
     image: "path/to/image1.jpg",
-    description: "A GIS mapping application that tackles a trickier travelling salesman problem using a combination of the greedy algorithm, simulated annealing, 2-opt, and 3-opt. Complete with a slew of other mapping features as well as custom graphics built with CSS and GTK and EZGL libraries. Made with C++."
+    description: "A GIS mapping application that tackles a trickier travelling salesman problem using a combination of the greedy algorithm, simulated annealing, 2-opt, and 3-opt. Complete with a slew of other mapping features as well as custom graphics built with CSS and GTK and EZGL libraries. Made with C++.",
+    github: "https://github.com/DarsanQi/Lazy-Way"
   },
   {
     title: "FPGA Human Benchmark",
     image: "path/to/image2.jpg",
-    description: "A reconstruction of the human benchmark tests implemented on an FPGA. The game includes a reaction time test, as well as a visual memory test. Made using Verilog."
+    description: "A reconstruction of the human benchmark tests implemented on an FPGA. The game includes a reaction time test, as well as a visual memory test. Made using Verilog.",
+    github: "https://github.com/DarsanQi/FPGA-Human-Benchmark"
   },
   {
     title: "NIOS II Rocket Flight Path Simulator",
     image: "path/to/image3.jpg",
-    description: "Takes in the mass, angle, and gravity, etc and simulates the rocket's trajectory. The simulator is built using the NIOS II processor and the Altera DE1-SoC board, and coded with C and Assembly."
+    description: "Takes in the mass, angle, and gravity, etc and simulates the rocket's trajectory. The simulator is built using the NIOS II processor and the Altera DE1-SoC board, and coded with C and Assembly.",
+    github: "https://github.com/DarsanQi/NIOS-II-Rocket-Flight-Path-Simulator"
   }
 ];
 
@@ -84,6 +89,9 @@ const Projects = () => {
             <img src={expandedProject.image} alt={expandedProject.title} className="project-image" />
             <div className="project-details">
               <h2 className="project-title">{expandedProject.title}</h2>
+              <a className="github-button" href={expandedProject.github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i> GitHub
+              </a>
               <p className="project-description">{expandedProject.description}</p>
             </div>
           </div>
