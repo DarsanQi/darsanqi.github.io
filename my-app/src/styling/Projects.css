@@ -1,7 +1,7 @@
 #projects {
   padding-bottom: 2em;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #000; 
   color: #fff;
   text-align: center;
@@ -34,7 +34,8 @@
   overflow: hidden;
   transition: transform 0.3s;
   width: 100%; /* Adjust as needed */
-  height: 300px; /* Adjust as needed */
+  aspect-ratio: 16 / 10.5882353; /* Ensure consistent height */
+
 }
 
 .project-card:hover {
@@ -48,33 +49,27 @@
 
 .project-details {
   position: absolute;
+  padding-top: 1%;
   bottom: 0;
   left: 0;
-  width: auto;
-  height: 35%; 
+  width: 100%;
+  height: 15%; 
   background-color: #bca9a1; 
   color: white; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10px; /* Add padding if necessary */
+  
 }
 
 .project-title {
+  margin: 0;
   font-family: 'SourceSans3', Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
-  margin: 0;
+  border: 2px solid #19e8e5;
 }
 
-
-.project-description {
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 0.75em; /* Adjust font size as needed */
-  margin: 0;
-  line-height: 1;
-  text-align: left;
-}
 
 /* Styles for overlay and expanded project */
 .overlay {
@@ -94,6 +89,7 @@
   position: relative;
   left:0%;
   top: 0%;
+  aspect-ratio: 16 / 9; /* This will maintain a 16:9 aspect ratio */
   background-color: #2e2e2e;
   width: 60%;
   height: 60%;
@@ -103,8 +99,6 @@
   border-radius: 8px;
   padding: 5%;
   box-sizing: border-box;
-  border: 2px solid #db23ad;
-
 }
 
 .expanded-project .project-image {
@@ -116,13 +110,13 @@
   /*border: 2px solid #1b45df;*/
   border: 2px solid #19e8e5;
   width:auto;
+  height: 500px;
   top:70%;
   background-color: #bca9a1; 
   color: white;
 }
 
 .expanded-project .github-button {
-  position: relative;
   margin-left: 20%;
   margin-right: 20%;
   font-size: 1.2em;
@@ -134,8 +128,6 @@
 }
 
 .expanded-project .project-title {
-  position: relative;
-  top: -40%;
   font-size: 2em;
   border: 2px solid #04c58b;
   
@@ -154,11 +146,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
-
-  .project-card {
-    height: 300px; /* Ensure consistent height */
-  }
-
   .project-title {
     font-size: 1.2em;
   }
@@ -170,14 +157,11 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  #projects {
-    padding-left: 5em;
-    padding-right: 5em;
-  }
+
 
   #projects h1 {
     font-family: 'Lato-Black', Arial, sans-serif;
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .projects-container {

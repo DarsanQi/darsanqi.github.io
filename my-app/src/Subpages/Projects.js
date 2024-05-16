@@ -61,7 +61,7 @@ const Projects = () => {
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
               <p className="project-title">{project.title}</p>
-              <p className="project-description">{project.description}</p>
+              
             </div>
           </div>
         ))}
@@ -77,7 +77,6 @@ const Projects = () => {
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
               <p className="project-title">{project.title}</p>
-              <p className="project-description">{project.description}</p>
             </div>
           </div>
         ))}
