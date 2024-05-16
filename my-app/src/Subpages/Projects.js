@@ -1,23 +1,13 @@
 const in_progress_projects = [
   {
-    title: "CPU from scratch",
+    title: "8 bit custom CPU",
     image: "path/to/image1.jpg",
     description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor."
   },
   {
     title: "RC Arduino",
     image: "path/to/image2.jpg",
-    description: "This is a short description of project 2."
-  },
-  {
-    title: "Project 3",
-    image: "path/to/image3.jpg",
-    description: "This is a short description of project 3."
-  },
-  {
-    title: "Project 4",
-    image: "path/to/image4.jpg",
-    description: "This is a short description of project 4."
+    description: "A remote controlled car, which is controlled using an Arduino and a custom built remote control. The car is built using a 3D printer and includes a camera that streams video to the remote control."
   }
 ];
 
@@ -25,22 +15,17 @@ const completed_projects = [
   {
     title: "Lazy Way",
     image: "path/to/image1.jpg",
-    description: "This is a short description of project 1."
+    description: "A GIS mapping application that tackles a trickier travelling salesman problem using a combination of the greedy algorithm, simulated annealing, 2-opt, and 3-opt. Complete with a slew of other mapping features as well as custom graphics built with CSS and GTK and EZGL libraries. Made with C++."
   },
   {
     title: "FPGA Human Benchmark",
     image: "path/to/image2.jpg",
-    description: "This is a short description of project 2."
+    description: "A reconstruction of the human benchmark tests implemented on an FPGA. The game includes a reaction time test, as well as a visual memory test. Made using Verilog."
   },
   {
     title: "NIOS II Rocket Flight Path Simulator",
     image: "path/to/image3.jpg",
-    description: "This is a short description of project 3."
-  },
-  {
-    title: "Project 4",
-    image: "path/to/image4.jpg",
-    description: "This is a short description of project 4."
+    description: "Takes in the mass, angle, and gravity, etc and simulates the rocket's trajectory. The simulator is built using the NIOS II processor and the Altera DE1-SoC board, and coded with C and Assembly."
   }
 ];
 
