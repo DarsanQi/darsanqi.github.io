@@ -35,7 +35,6 @@
   transition: transform 0.3s;
   width: 100%; /* Adjust as needed */
   aspect-ratio: 16 / 10.5882353; /* Ensure consistent height */
-
 }
 
 .project-card:hover {
@@ -67,7 +66,6 @@
   font-family: 'SourceSans3', Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
-  border: 2px solid #19e8e5;
 }
 
 
@@ -89,10 +87,9 @@
   position: relative;
   left:0%;
   top: 0%;
-  aspect-ratio: 16 / 9; /* This will maintain a 16:9 aspect ratio */
+  width:75%;
+  aspect-ratio: 16 / 10.5882353; /* This will maintain a 16:9 aspect ratio */
   background-color: #2e2e2e;
-  width: 60%;
-  height: 60%;
   max-height: 70%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -111,7 +108,7 @@
   border: 2px solid #19e8e5;
   width:auto;
   height: 500px;
-  top:70%;
+  top:85%;
   background-color: #bca9a1; 
   color: white;
 }

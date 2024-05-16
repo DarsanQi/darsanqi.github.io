@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const in_progress_projects = [
   {
     title: "8 bit custom CPU",
-    image: "path/to/image1.jpg",
+    image: "/public/assets/images/home_flower.png",
     description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor.",
     github: "https://github.com/DarsanQi/8-bit-custom-CPU"
   },
