@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 const in_progress_projects = [
   {
     title: "8 bit custom CPU",
@@ -30,13 +32,27 @@ const completed_projects = [
 ];
 
 const Projects = () => {
+  const [expandedProject, setExpandedProject] = useState(null);
+
+  const handleCardClick = (project) => {
+    setExpandedProject(project);
+  };
+
+  const handleCloseClick = () => {
+    setExpandedProject(null);
+  };
+
   return (
     <section id="projects">
-      <h1>Projects</h1>
-      <h2>/*In Progress...*/</h2>
+      <h1>{'{ Projects }'}</h1>
+      <h2>/*...In Progress...*/</h2>
       <div className="projects-container">
         {in_progress_projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div
+            className={`project-card ${expandedProject === project ? 'expanded' : ''}`}
+            key={index}
+            onClick={() => handleCardClick(project)}
+          >
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
               <p className="project-title">{project.title}</p>
@@ -48,7 +64,11 @@ const Projects = () => {
       <h2>/*Completed*/</h2>
       <div className="projects-container">
         {completed_projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div
+            className={`project-card ${expandedProject === project ? 'expanded' : ''}`}
+            key={index}
+            onClick={() => handleCardClick(project)}
+          >
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
               <p className="project-title">{project.title}</p>
@@ -57,6 +77,18 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+      {expandedProject && (
+        <div className="overlay" onClick={handleCloseClick}>
+          <div className="expanded-project" onClick={(e) => e.stopPropagation()}>
+            <img src={expandedProject.image} alt={expandedProject.title} className="project-image" />
+            <div className="project-details">
+              <h2 className="project-title">{expandedProject.title}</h2>
+              <p className="project-description">{expandedProject.description}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -55,32 +55,76 @@
   background-color: #bca9a1; 
   color: white; 
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px; /* Add padding if necessary */
 }
 
 .project-title {
-  position: inherit;
   font-family: 'SourceSans3', Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
-  text-align: Center;
-  margin-top: 0;
- 
+  margin: 0;
 }
 
 .project-description {
-  position: inherit;
-  top: 30%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
   font-family: 'Lato', Arial, sans-serif;
   font-size: 0.75em; /* Adjust font size as needed */
   margin: 0;
   line-height: 1;
-  text-align: center;
+  text-align: left;
+}
+
+/* Styles for overlay and expanded project */
+.overlay {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border: 2px solid #df1b1b;
+}
+
+.expanded-project {
+  position: relative;
+  left:0%;
+  top: 0%;
+  background-color: #2e2e2e;
+  width: 60%;
+  height: 60%;
+  max-height: 70%;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 5%;
+  box-sizing: border-box;
+  border: 2px solid #db23ad;
+
+}
+
+.expanded-project .project-image {
+  width: 80%;
+  height: auto;
+}
+
+.expanded-project .project-details {
+  /*border: 2px solid #1b45df;*/
+  width: 100%;
+  background-color: #bca9a1; 
+  color: white;
+}
+
+.expanded-project .project-title {
+  font-size: 2em;
+}
+
+.expanded-project .project-description {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 /* Desktop styles */
@@ -114,6 +158,7 @@
     font-family: 'Lato-Black', Arial, sans-serif;
     font-size: 4em;
   }
+
   .projects-container {
     grid-template-columns: 1fr;
   }
