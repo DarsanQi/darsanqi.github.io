@@ -21,6 +21,25 @@
   margin-bottom: 1em;
 }
 
+#projects h3 {
+  font-family: 'SourceSans3', Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+#projects h4 {
+  font-family: 'Lato-Black', Arial, sans-serif;
+  font-size: 1em;
+}
+#projects p {
+  font-family: 'SourceSans3', Arial, sans-serif;
+  font-size: 1.2em;
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+
 /* Container for project cards */
 .projects-container {
   display: grid;
@@ -94,46 +113,49 @@
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 8px;
-  padding: 5%;
+  
   box-sizing: border-box;
 }
 
 .expanded-project .project-image {
-  
   height: auto;
 }
 
 .expanded-project .project-details {
-  /*border: 2px solid #1b45df;*/
-  border: 2px solid #19e8e5;
-  width:auto;
+  width: auto;
   height: 500px;
-  top:85%;
+  top: 85%;
   background-color: #bca9a1; 
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0; /* Ensure there is no padding */
+  margin: 0; /* Ensure there is no margin */
 }
 
+.expanded-project .project-title {
+  padding: 0;
+  margin: 0; /* Remove margin */
+  font-size: 2em;
+}
+
+
+
 .expanded-project .github-button {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 30%;
+  margin-right: 30%;
   font-size: 1.2em;
   color: #fff;
   text-decoration: none;
   background-color: #333;
-  padding: 5px 10px;
   border-radius: 5px;
 }
 
-.expanded-project .project-title {
-  font-size: 2em;
-  border: 2px solid #04c58b;
-  
-}
-
 .expanded-project .project-description {
+  padding: 0;
   font-size: 1.2em;
   line-height: 1.5;
-  border: 2px solid #d8dedc;
   text-align: center;
 }
 
@@ -154,7 +176,10 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-
+  #projects {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   #projects h1 {
     font-family: 'Lato-Black', Arial, sans-serif;
@@ -165,6 +190,10 @@
     grid-template-columns: 1fr;
   }
 
+  .expanded-project {
+    width: 90%;
+    aspect-ratio: 16 / 32;
+  }
   .project-card {
     margin-bottom: 1em;
     width: 100%;

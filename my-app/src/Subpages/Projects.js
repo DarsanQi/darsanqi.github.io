@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const in_progress_projects = [
   {
     title: "8 bit custom CPU",
-    image: "/public/assets/images/home_flower.png",
+    image: '/assets/images/home_flower.jpg',
     description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor.",
     github: "https://github.com/DarsanQi/8-bit-custom-CPU"
   },
@@ -50,7 +50,8 @@ const Projects = () => {
   return (
     <section id="projects">
       <h1>{'{ Projects }'}</h1>
-      <h2>/*...In Progress...*/</h2>
+      <h4>//Click on a project and scroll to see more details</h4>
+      <h2>...In Progress...</h2>
       <div className="projects-container">
         {in_progress_projects.map((project, index) => (
           <div
@@ -66,7 +67,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <h2>/*Completed*/</h2>
+      <h2>Completed</h2>
       <div className="projects-container">
         {completed_projects.map((project, index) => (
           <div
@@ -87,11 +88,12 @@ const Projects = () => {
           <div className="expanded-project" onClick={(e) => e.stopPropagation()}>
             <img src={expandedProject.image} alt={expandedProject.title} className="project-image" />
             <div className="project-details">
-              <h2 className="project-title">{expandedProject.title}</h2>
+              <h3 className="project-title">{expandedProject.title}</h3>
+              <p className="project-description">{expandedProject.description}</p>
               <a className="github-button" href={expandedProject.github} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i> GitHub
               </a>
-              <p className="project-description">{expandedProject.description}</p>
+              
             </div>
           </div>
         </div>
