@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const in_progress_projects = [
   {
     title: "8 bit custom CPU",
-    image: '/assets/images/home_flower.jpg',
+    image: '/assets/background_images/home_flower.jpg',
     description: "A custom built computer, which includes a processor, memory, built using a breadboard, and a custom operating system. The operating system is built from scratch and includes a shell, file system, and a simple text editor.",
     github: "https://github.com/DarsanQi/8-bit-custom-CPU"
   },
@@ -17,8 +17,8 @@ const in_progress_projects = [
 
 const completed_projects = [
   {
-    title: "Lazy Way",
-    image: "path/to/image1.jpg",
+    title: "Lazy Way - GIS Mapping Application",
+    image: "/assets/project_assets/LazyWay_Screenshot.png",
     description: "A GIS mapping application that tackles a trickier travelling salesman problem using a combination of the greedy algorithm, simulated annealing, 2-opt, and 3-opt. Complete with a slew of other mapping features as well as custom graphics built with CSS and GTK and EZGL libraries. Made with C++.",
     github: "https://github.com/DarsanQi/Lazy-Way"
   },
@@ -30,10 +30,18 @@ const completed_projects = [
   },
   {
     title: "NIOS II Rocket Flight Path Simulator",
-    image: "path/to/image3.jpg",
+    image: "/assets/project_assets/Nios_Orbit_Screenshot.png",
     description: "Takes in the mass, angle, and gravity, etc and simulates the rocket's trajectory. The simulator is built using the NIOS II processor and the Altera DE1-SoC board, and coded with C and Assembly.",
     github: "https://github.com/DarsanQi/NIOS-II-Rocket-Flight-Path-Simulator"
-  }
+  },
+  {
+    title: "Personal Portfolio Website",
+    image: "/assets/project_assets/Nios_Orbit_Screenshot.png",
+    description: "A personal portfolio website built using React. The creation of this website involved the self learning of React, HTML, CSS, and JavaScript, and Blender. The website is hosted on GitHub Pages.",
+    github: "https://github.com/DarsanQi/NIOS-II-Rocket-Flight-Path-Simulator"
+  },
+
+
 ];
 
 const Projects = () => {
