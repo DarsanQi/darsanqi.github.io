@@ -1,17 +1,30 @@
-import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <h2>Let's Get In Touch.</h2>
-      <form>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="email" placeholder="Email Address" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <div className="contact-icons">
+    <section id="contact" className="contact-section">
+      <div className="contact-container">
+        <div className="contact-image">
+          <img src="path_to_your_image.png" alt="Contact Illustration" />
+        </div>
+        <div className="contact-form-container">
+          <h2>Looks like you need some help!!!</h2>
+          <h1>Reach Out!</h1>
+          <p>
+            I usually respond within an hour, but designers do sleep two to three hours a night, so it might take a bit longer.
+            Thank you and I am looking to hearing from you.
+          </p>
+          <form>
+            <input type="text" placeholder="Name" name="name" required />
+            <input type="email" placeholder="Email Address" name="email" required />
+            <textarea placeholder="Message" name="message" required></textarea>
+            <div className="form-buttons">
+              <button type="submit">Submit</button>
+              <button type="button" className="schedule-meeting-button">Schedule A Meeting</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="contact-icons-contact">
         <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
         </a>
