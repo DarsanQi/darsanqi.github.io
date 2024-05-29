@@ -7,6 +7,7 @@ import './styling/Projects.css';
 import './styling/Resume.css';
 import './styling/Contact.css';
 import Header from './Subpages/Header';
+import Footer from './Subpages/Footer';
 import Home from './Subpages/Home';
 import About from './Subpages/About';
 import Projects from './Subpages/Projects';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

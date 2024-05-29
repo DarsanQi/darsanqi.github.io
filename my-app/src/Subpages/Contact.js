@@ -11,7 +11,7 @@ const Contact = () => {
             Thank you and I am looking to hearing from you.
           </p>
           <form>
-            <input type="text" placeholder="Name" name="name" required />
+            <input type="text" placeholder="Full Name" name="name" required />
             <input type="email" placeholder="Email Address" name="email" required />
             <textarea placeholder="Message" name="message" required></textarea>
             <div className="form-buttons">
