@@ -1,30 +1,37 @@
 .contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
     padding: 2em;
     background-color: #000;
     color: #fff;
+
   }
   
   .contact-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     max-width: 1200px;
     width: 100%;
     align-items: center;
-    gap: 2em;
+    
+
   }
   
   .contact-image img {
     width: 100%;
+    height: auto;
+    margin-left: 10%;
     max-width: 500px;
     height: auto;
+    border: 1px solid #d81313;
+
   }
   
   .contact-form-container {
+    margin-left: 8%;
     max-width: 600px;
     width: 100%;
+    border: 1px solid #0b44d5;
+
   }
   
   .contact-form-container h2 {
@@ -47,14 +54,25 @@
     flex-direction: column;
   }
   
-  .contact-form-container input,
+  .contact-form-container input
+  {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 80%;
+  }
   .contact-form-container textarea {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #fff;
     border-radius: 5px;
     font-size: 1em;
-    width: 100%;
+    width: 80.5%;
+    height: 100px;
+   
+    
   }
   
   .contact-form-container button {
@@ -69,7 +87,6 @@
   }
   
   .schedule-meeting-button {
-    background-color: #007bff;
     margin-left: 1em;
   }
   
@@ -84,26 +101,16 @@
     color: fff;
   }
 
-  .contact-icons-contact {
-    display: flex;
-    z-index: 2;
-    width: 80%;
-    position: absolute;
-    bottom: 5%;
-    border: 1px solid #fff;
-    padding-left: 20%;
-  }
-  .contact-icons-contact a {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #fff;
+  .contact-form-container contact-buttons {
+    margin-top: 10%;
     font-size: 2em;
-    text-decoration: none;
-    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
-  
-  .contact-icons-contact a:hover {
-    color: #ccc;
-    transition: background-color 0.5s ease-in-out; 
+  .contact-form-container contact-buttons a {
+    color: #fff;
+    margin-right: 1em;
   }
+
   
