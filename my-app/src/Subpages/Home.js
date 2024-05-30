@@ -1,9 +1,14 @@
+import TypingAnimation from './TypingAnimation';
+
 const Home = () => {
   return (
     <section id="home">
         <div className="home-background-image"></div>
         <div className="home-name">Darsan Qi</div>
         <div className="home-about">Computer Engineering @UofT</div>
+        <div className="home-typing-animation">
+          <TypingAnimation />
+        </div>
         <div className="contact-icons">
         <a href="https://www.linkedin.com/in/darsan-qi-44613920b/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>

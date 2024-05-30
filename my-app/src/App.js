@@ -13,6 +13,7 @@ import About from './Subpages/About';
 import Projects from './Subpages/Projects';
 import Resume from './Subpages/Resume';
 import Contact from './Subpages/Contact';
+import TypingAnimation from './Subpages/TypingAnimation';
 
 function App() {
   return (
