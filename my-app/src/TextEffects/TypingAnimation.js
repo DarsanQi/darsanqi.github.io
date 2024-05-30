@@ -10,9 +10,9 @@ const TypingAnimation = () => {
         '{ Creating solutions one line of code at a time }',
         'Building cool things that I find interesting :)'
       ]}
-      typeSpeed={50}
-      backSpeed={60}
-      backDelay={2000}
+      typeSpeed={45}
+      backSpeed={30}
+      backDelay={2500}
       loop
     />
   );

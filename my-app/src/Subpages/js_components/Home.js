@@ -1,20 +1,16 @@
 import TypingAnimation from '../../TextEffects/TypingAnimation';
 import HackingAnimation from '../../TextEffects/HackingAnimation';
 
-
 const Home = () => {
   return (
     <section id="home">
-        <div className="home-background-image"></div>
-        <name>Darsan Qi</name>
-        <description>Computer Engineering @UofT</description>
-        <typing-animation>
-          <TypingAnimation />
-        </typing-animation>
-        <div className="home-hacking-animation">
-          <HackingAnimation text="<=========== { Q } ==========>" />
-        </div>
-        <div className="contact-icons">
+      <div className="home-background-image"></div>
+      <h1 className="home-name"><HackingAnimation text="Darsan Qi" /></h1>
+      <p className="home-description"><HackingAnimation text="Computer Engineering @ UofT" /></p>
+      <div className="home-typing-animation">
+        <TypingAnimation />
+      </div>
+      <div className="home-contact-icons">
         <a href="https://www.linkedin.com/in/darsan-qi-44613920b/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
         </a>

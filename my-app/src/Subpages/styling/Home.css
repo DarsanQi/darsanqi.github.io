@@ -1,3 +1,4 @@
+/* Global styles */
 #home {
   display: flex;
   flex-direction: column;
@@ -5,20 +6,20 @@
   justify-content: flex-start;
   height: 85vh; 
   background-color: #000; 
-  /*border: 2px solid #df1b1b;*/
   box-sizing: border-box; 
   position: relative;
   overflow: hidden;
 }
 
-#home name {
+.home-name {
   color: #fff;
   font-size: 6em;
   font-family: 'Lato-Black', Arial, sans-serif;
   text-align: left; 
   z-index: 2;
 }
-#home description {
+
+.home-description {
   color: #fff;
   font-size: 2em;
   font-family: 'Roboto-Medium', Arial, sans-serif;
@@ -39,10 +40,7 @@
   opacity: 1; 
 }
 
-
-
-
-#home typing-animation {
+.home-typing-animation {
   color: #fff;
   font-family: 'Roboto-Medium', Arial, sans-serif;
   text-align: left; 
@@ -50,95 +48,96 @@
   z-index: 2;
 }
 
-.home-hacking-animation {
-  color: #fff;
-  font-size: 1.5em;
-  font-family: 'Roboto-Medium', Arial, sans-serif;
-  text-align: left; 
-  z-index: 2;
-}
-
-.contact-icons {
+.home-contact-icons {
   display: flex;
   z-index: 2;
   width: 80%;
   position: absolute;
   bottom: 5%;
 }
-.contact-icons a {
+
+.home-contact-icons a {
   color: #fff;
   font-size: 2em;
   text-decoration: none;
   box-sizing: border-box; 
 }
 
-.contact-icons a:hover {
+.home-contact-icons a:hover {
   color: #ccc;
   transition: background-color 0.5s ease-in-out; 
 }
 
-/* Mobile */
+/* Mobile styles */
 @media (max-width: 768px) {
   #home {
     padding-left: 0%; 
     margin-left: 5%;
   }
-  .home-background-image
-  {
+  
+  .home-background-image {
     background-position: 80% center;
-    left:10%;
+    left: 10%;
   }
-  #home name {
+  
+  .home-name {
     padding-left: 6%;
     font-size: 3em;
   }
-  #home description {
+  
+  .home-description {
     padding-left: 6.5%;
     font-size: 1em;
     margin-top: 3%;
   }
-  #home typing-animation {
+  
+  .home-typing-animation {
     padding-left: 6.5%;
     font-size: 1em;
     margin-top: 0%;
   }
-
-
-  .contact-icons {
+  
+  .home-contact-icons {
     bottom: 0%;
     padding-left: 3%;
     flex-direction: row; 
     align-items: flex-start; 
   }
-  .contact-icons a{
+  
+  .home-contact-icons a {
     margin-top: 5%;
     margin-right: 2%;
     padding-right: 2%;
   }
 }
 
-/* Desktop */
+/* Desktop styles */
 @media (min-width: 769px) {
   #home {
     padding-left: 0%; 
     margin-left: 10%;
   }
-  #home name {
+  
+  .home-name {
     margin-top: 1%; 
   }
-  #home description {
+  
+  .home-description {
     margin-top: 2%; 
     margin-left: 0.5%;
   }
-  #home typing-animation {
+  
+  .home-typing-animation {
     margin-top: 0%; 
     margin-left: 0.7%;
   }
-  .contact-icons {
+  
+  .home-contact-icons {
     bottom: 0%;
     flex-direction: row; 
   }
-  .contact-icons a{
+  
+  .home-contact-icons a {
     margin-top: 5%;
     margin-right: 2%;
     padding: 2%;
