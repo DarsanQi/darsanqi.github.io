@@ -10,10 +10,18 @@
   position: relative;
   overflow: hidden;
 }
-.home-name {
+
+#home name {
   color: #fff;
   font-size: 6em;
   font-family: 'Lato-Black', Arial, sans-serif;
+  text-align: left; 
+  z-index: 2;
+}
+#home description {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Roboto-Medium', Arial, sans-serif;
   text-align: left; 
   z-index: 2;
 }
@@ -32,15 +40,9 @@
 }
 
 
-.home-about {
-  color: #fff;
-  font-size: 1.5em;
-  font-family: 'Roboto-Medium', Arial, sans-serif;
-  text-align: left; 
-  z-index: 2;
-}
 
-.home-typing-animation {
+
+#home typing-animation {
   color: #fff;
   font-family: 'Roboto-Medium', Arial, sans-serif;
   text-align: left; 
@@ -86,20 +88,22 @@
     background-position: 80% center;
     left:10%;
   }
-  .home-name {
+  #home name {
     padding-left: 6%;
     font-size: 3em;
   }
-  .home-about {
+  #home description {
     padding-left: 6.5%;
     font-size: 1em;
     margin-top: 3%;
   }
-  .home-typing-animation {
+  #home typing-animation {
     padding-left: 6.5%;
     font-size: 1em;
     margin-top: 0%;
   }
+
+
   .contact-icons {
     bottom: 0%;
     padding-left: 3%;
@@ -119,14 +123,14 @@
     padding-left: 0%; 
     margin-left: 10%;
   }
-  .home-name {
+  #home name {
     margin-top: 1%; 
   }
-  .home-about {
+  #home description {
     margin-top: 2%; 
     margin-left: 0.5%;
   }
-  .home-typing-animation {
+  #home typing-animation {
     margin-top: 0%; 
     margin-left: 0.7%;
   }

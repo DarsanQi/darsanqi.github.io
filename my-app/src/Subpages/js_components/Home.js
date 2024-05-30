@@ -6,11 +6,11 @@ const Home = () => {
   return (
     <section id="home">
         <div className="home-background-image"></div>
-        <div className="home-name">Darsan Qi</div>
-        <div className="home-about">Computer Engineering @UofT</div>
-        <div className="home-typing-animation">
+        <name>Darsan Qi</name>
+        <description>Computer Engineering @UofT</description>
+        <typing-animation>
           <TypingAnimation />
-        </div>
+        </typing-animation>
         <div className="home-hacking-animation">
           <HackingAnimation text="<=========== { Q } ==========>" />
         </div>

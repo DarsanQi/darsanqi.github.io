@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const HackingAnimation = ({ text }) => {
+const HackingAnimation = ({ text, className }) => {
   const [displayedText, setDisplayedText] = useState('');
 
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
@@ -22,7 +22,9 @@ const HackingAnimation = ({ text }) => {
 
       if (currentIndex >= text.length) {
         clearInterval(interval);
-        setDisplayedText(text);
+        setTimeout(() => {
+          setDisplayedText(text);
+        }, 2000); // Adjust the delay duration (2000ms = 2 seconds) as needed
       } else {
         currentIndex++;
       }
@@ -33,7 +35,7 @@ const HackingAnimation = ({ text }) => {
   }, [text]);
 
   return (
-    <div style={{ fontFamily: 'monospace', fontSize: '2em', whiteSpace: 'pre' }}>
+    <div className={className}>
       {displayedText}
     </div>
   );
