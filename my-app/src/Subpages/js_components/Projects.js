@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import HackingAnimation from '../../TextEffects/HackingAnimation';
+
+
 
 const in_progress_projects = [
   {
@@ -57,7 +60,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <h1>{'{ Projects }'}</h1>
+      <h1><HackingAnimation text="{ Projects }" /></h1>
       <h4>//Click on a project and scroll to see more details</h4>
       <h2>...In Progress...</h2>
       <div className="projects-container">

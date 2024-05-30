@@ -1,4 +1,6 @@
 import TypingAnimation from '../../TextEffects/TypingAnimation';
+import HackingAnimation from '../../TextEffects/HackingAnimation';
+
 
 const Home = () => {
   return (
@@ -8,6 +10,9 @@ const Home = () => {
         <div className="home-about">Computer Engineering @UofT</div>
         <div className="home-typing-animation">
           <TypingAnimation />
+        </div>
+        <div className="home-hacking-animation">
+          <HackingAnimation text="<=========== { Q } ==========>" />
         </div>
         <div className="contact-icons">
         <a href="https://www.linkedin.com/in/darsan-qi-44613920b/" target="_blank" rel="noopener noreferrer">

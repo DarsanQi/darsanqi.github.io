@@ -42,6 +42,14 @@
 
 .home-typing-animation {
   color: #fff;
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  text-align: left; 
+  font-size: 1.3em;
+  z-index: 2;
+}
+
+.home-hacking-animation {
+  color: #fff;
   font-size: 1.5em;
   font-family: 'Roboto-Medium', Arial, sans-serif;
   text-align: left; 
@@ -85,7 +93,12 @@
   .home-about {
     padding-left: 6.5%;
     font-size: 1em;
-    margin-top: 5%;
+    margin-top: 3%;
+  }
+  .home-typing-animation {
+    padding-left: 6.5%;
+    font-size: 1em;
+    margin-top: 0%;
   }
   .contact-icons {
     bottom: 0%;
@@ -111,6 +124,11 @@
   }
   .home-about {
     margin-top: 2%; 
+    margin-left: 0.5%;
+  }
+  .home-typing-animation {
+    margin-top: 0%; 
+    margin-left: 0.7%;
   }
   .contact-icons {
     bottom: 0%;

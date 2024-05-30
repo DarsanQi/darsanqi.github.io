@@ -5,12 +5,14 @@ const TypingAnimation = () => {
   return (
     <ReactTyped
       strings={[
-        'This is a typing animation.',
-        'It will type and delete text.',
-        'You can customize it as you like.'
+        'Welcome to my website!',
+        'Check out some of my projects!',
+        '{ Creating solutions one line of code at a time }',
+        'Building cool things that I find interesting :)'
       ]}
       typeSpeed={50}
-      backSpeed={50}
+      backSpeed={60}
+      backDelay={2000}
       loop
     />
   );
