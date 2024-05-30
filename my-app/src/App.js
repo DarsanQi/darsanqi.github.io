@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './styling/Global.css';
-import './styling/Home.css';
-import './styling/About.css';
-import './styling/Projects.css';
-import './styling/Resume.css';
-import './styling/Contact.css';
-import Header from './Subpages/Header';
-import Footer from './Subpages/Footer';
-import Home from './Subpages/Home';
-import About from './Subpages/About';
-import Projects from './Subpages/Projects';
-import Resume from './Subpages/Resume';
-import Contact from './Subpages/Contact';
-import TypingAnimation from './Subpages/TypingAnimation';
+import './Statics/Global.css';
+import './Subpages/styling/Home.css';
+import './Subpages/styling/About.css';
+import './Subpages/styling/Projects.css';
+import './Subpages/styling/Resume.css';
+import './Subpages/styling/Contact.css';
+import Header from './Statics/Header';
+import Footer from './Statics/Footer';
+import Home from './Subpages/js_components/Home';
+import About from './Subpages/js_components/About';
+import Projects from './Subpages/js_components/Projects';
+import Resume from './Subpages/js_components/Resume';
+import Contact from './Subpages/js_components/Contact';
+
 
 function App() {
   return (

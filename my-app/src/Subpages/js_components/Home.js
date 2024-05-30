@@ -1,4 +1,4 @@
-import TypingAnimation from './TypingAnimation';
+import TypingAnimation from '../../TextEffects/TypingAnimation';
 
 const Home = () => {
   return (
