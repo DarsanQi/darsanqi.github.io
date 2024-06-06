@@ -2,13 +2,12 @@
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
+      <div className="contact-background-image"></div>
       <div className="contact-container">
         <div className="contact-form-container">
-          <h2>Looks like you need some help</h2>
-          <h1>Reach Out!</h1>
+          <h1>Let's Connect!</h1>
           <p>
-            I usually respond within an hour, but designers do sleep two to three hours a night, so it might take a bit longer.
-            Thank you and I am looking to hearing from you.
+            Please feel free to leave your contact info below, and I'll get back to you as soon as possible. I'm excited to hear from you!
           </p>
           <form>
             <input type="text" placeholder="Full Name" name="name" required />
@@ -34,10 +33,8 @@ const Contact = () => {
           </contact-buttons>
           
         </div>
-        <div className="contact-image">
-          <img src="/assets/background_images/contact_line.jpg" alt="Contact Illustration" />
-        </div>
       </div>
+      
     </section>
   );
 }

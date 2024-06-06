@@ -3,27 +3,37 @@
     padding: 2em;
     background-color: #000;
     color: #fff;
+    overflow-y: hidden;
 
   }
   
+  .contact-background-image {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    
+    background-image: url('/public/assets/background_images/contact_flower.jpg');
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1; 
+    opacity: 1; 
+    border: 1px solid #183d93;
+    overflow-y: hidden;
+  }
+  
+
+
   .contact-container {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
     width: 100%;
     align-items: center;
+    z-index: 2;
     
-
-  }
-  
-  .contact-image img {
-    width: 100%;
-    height: auto;
-    margin-left: 10%;
-    max-width: 500px;
-    height: auto;
-    border: 1px solid #d81313;
-
   }
   
   .contact-form-container {
@@ -31,27 +41,32 @@
     max-width: 600px;
     width: 100%;
     border: 1px solid #3b404c;
-
+    z-index: 2;
+    padding-left: 10%;
   }
   
   .contact-form-container h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
+    z-index: 2;
   }
   
   .contact-form-container h1 {
     font-size: 2.5em;
     margin-bottom: 1em;
+    z-index: 2;
   }
   
   .contact-form-container p {
     font-size: 1em;
     margin-bottom: 2em;
+    z-index: 2;
   }
   
   .contact-form-container form {
     display: flex;
     flex-direction: column;
+    
   }
   
   .contact-form-container input

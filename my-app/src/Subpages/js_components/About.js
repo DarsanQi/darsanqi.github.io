@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import HackingAnimation from '../../TextEffects/HackingAnimation';
+
+
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -19,9 +22,9 @@ const About = () => {
       <section id="about">
         <div className="about-content">
           <div className="about-greeting">
-            <h1>Hi there!</h1>
-            <h1>I'm</h1>
-            <h1>Darsan.</h1>
+            <h1><HackingAnimation text="Hi There!" /></h1>
+            <h1><HackingAnimation text="I'm" /></h1>
+            <h1><HackingAnimation text="Darsan" /></h1>
           </div>
           <div className="about-description">
             <p>
