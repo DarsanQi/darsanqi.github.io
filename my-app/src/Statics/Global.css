@@ -35,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  background-color: #000;
+  background-color: #020202;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -76,7 +76,7 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px; 
   padding: 10px; 
-  background-color: black; 
+  background-color: #020202; 
   transition: background-color 0.5s ease-in-out; 
 }
 

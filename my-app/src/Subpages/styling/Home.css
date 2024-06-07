@@ -5,7 +5,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   height: 85vh; 
-  background-color: #000; 
+  background-color: #020202; 
   box-sizing: border-box; 
   position: relative;
   overflow: hidden;
@@ -36,6 +36,7 @@
   background-position: center; 
   z-index: 1; 
   opacity: 1; 
+  
 }
 
 .home-typing-animation {

@@ -20,7 +20,7 @@
 }
 #about {
   grid-area: text;
-  background-color: #000;
+  background-color: #020202;
   padding: 2em;
   color: #fff;
   overflow-y: auto;
@@ -99,7 +99,7 @@
   }
 
   #about {
-    background-color: #000; 
+    background-color: #020202; 
     overflow-y: hidden; 
   }
 }
