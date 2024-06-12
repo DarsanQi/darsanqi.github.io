@@ -83,7 +83,7 @@
 @media (max-width: 768px) {
   #home {
     padding-left: 0%; 
-    margin-left: 5%;
+    margin-left: 0%;
   }
   
   .home-background-image {

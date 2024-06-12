@@ -39,7 +39,7 @@ const completed_projects = [
   },
   {
     title: "Personal Portfolio Website",
-    image: "/assets/project_assets/Nios_Orbit_Screenshot.png",
+    image: "/assets/background_images/contact_flower.jpg",
     description: "A personal portfolio website built using React. The creation of this website involved the self learning of React, HTML, CSS, and JavaScript, and Blender. The website is hosted on GitHub Pages.",
     github: "https://github.com/DarsanQi/NIOS-II-Rocket-Flight-Path-Simulator"
   },

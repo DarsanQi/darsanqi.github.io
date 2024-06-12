@@ -4,8 +4,7 @@
     background-color: #020202;
     color: #fff;
     overflow-y: auto; /* Ensure no overflow */
-    height: 85vh; /* Make sure the section takes up the full viewport height */
-    
+    height: 85vh; /* Make sure the section takes up the full viewport height */  
   }
   
   .contact-background-image {
@@ -24,7 +23,6 @@
     overflow-y: hidden;
   }
   
-
   .contact-container {
     margin-left: 8%;
     display: flex;
@@ -104,8 +102,6 @@
     margin-top: 1em;
   }
   
-  
-  
   .contact-form-container button:hover,
   .contact-form-container .schedule-meeting-button:hover {
     background-color: #555;
@@ -147,7 +143,7 @@
     }
 
     .contact-background-image {
-      bottom: -20%;
+      bottom: 5%;
     }
   
     .contact-container {
@@ -195,7 +191,7 @@
     }
 
     .contact-form-container contact-buttons {
-      margin-top: 10%;
+      margin-top: 30%;
       font-size: 1.5em;
     }
     .contact-form-container contact-buttons a {
