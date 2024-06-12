@@ -5,6 +5,7 @@
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "text image";
   height: 85vh;
+  overflow-y: auto;
 }
 
 .mobile-container {
@@ -16,14 +17,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden; 
+  overflow: auto; 
 }
 #about {
   grid-area: text;
   background-color: #020202;
   padding: 2em;
   color: #fff;
-  overflow-y: auto;
+  margin-left: 10%;
+  overflow-y: auto; 
 }
 
 .mobile-container #about {
@@ -39,6 +41,7 @@
   background-position: center;
   transform: scale(0.8);
   transform-origin: top left;
+  display: block;
 }
 
 .mobile-background-image {
@@ -84,22 +87,15 @@
 
   #about {
     background-color: transparent; 
-    overflow-y: hidden; 
+  }
+
+  .about-greeting h1 {
+    font-size: 2em;
+  }
+  
+  .about-description p {
+    font-size: 1em;
+    
   }
 }
 
-/* Desktop */
-@media (min-width: 769px) {
-  #about {
-    margin-left: 10%;
-  }
-
-  .about-background-image {
-    display: block; 
-  }
-
-  #about {
-    background-color: #020202; 
-    overflow-y: hidden; 
-  }
-}

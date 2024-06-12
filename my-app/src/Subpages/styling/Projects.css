@@ -5,7 +5,7 @@
   background-color: #000; 
   color: #fff;
   text-align: center;
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto; 
   height: 85vh; 
 }
 
@@ -52,8 +52,8 @@
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
-  width: 100%; /* Adjust as needed */
-  aspect-ratio: 16 / 10.5882353; /* Ensure consistent height */
+  width: 100%; 
+  aspect-ratio: 16 / 10.5882353; 
 }
 
 .project-card:hover {
@@ -95,7 +95,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +107,7 @@
   left:0%;
   top: 0%;
   width:75%;
-  aspect-ratio: 16 / 10.5882353; /* This will maintain a 16:9 aspect ratio */
+  aspect-ratio: 16 / 10.5882353; 
   background-color: #2e2e2e;
   max-height: 70%;
   overflow-y: auto;
@@ -130,13 +130,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0; /* Ensure there is no padding */
-  margin: 0; /* Ensure there is no margin */
+  padding: 0; 
+  margin: 0; 
 }
 
 .expanded-project .project-title {
   padding: 0;
-  margin: 0; /* Remove margin */
+  margin: 0; 
   font-size: 2em;
 }
 

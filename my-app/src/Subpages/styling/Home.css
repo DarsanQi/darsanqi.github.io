@@ -9,22 +9,27 @@
   box-sizing: border-box; 
   position: relative;
   overflow: hidden;
+  padding-left: 0%; 
+  margin-left: 11%;
 }
 
 .home-name {
   color: #fff;
-  font-size: 6em;
+  font-size: 4em;
   font-family: 'Lato-Black', Arial, sans-serif;
   text-align: left; 
   z-index: 2;
+  margin-top: 1%; 
 }
 
 .home-description {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Roboto-Medium', Arial, sans-serif;
   text-align: left; 
   z-index: 2;
+  margin-top: 2%; 
+  margin-left: 0.5%;
 }
 
 .home-background-image {
@@ -45,6 +50,8 @@
   text-align: left; 
   font-size: 1.3em;
   z-index: 2;
+  margin-top: 0%; 
+  margin-left: 0.7%;
 }
 
 .home-contact-icons {
@@ -60,11 +67,16 @@
   font-size: 2em;
   text-decoration: none;
   box-sizing: border-box; 
+  margin-top: 5%;
+  margin-right: 2%;
+  padding: 2%;
 }
 
 .home-contact-icons a:hover {
   color: #ccc;
   transition: background-color 0.5s ease-in-out; 
+  bottom: 0%;
+  flex-direction: row; 
 }
 
 /* Mobile styles */
@@ -107,38 +119,5 @@
     margin-top: 5%;
     margin-right: 2%;
     padding-right: 2%;
-  }
-}
-
-/* Desktop styles */
-@media (min-width: 769px) {
-  #home {
-    padding-left: 0%; 
-    margin-left: 10%;
-  }
-  
-  .home-name {
-    margin-top: 1%; 
-  }
-  
-  .home-description {
-    margin-top: 2%; 
-    margin-left: 0.5%;
-  }
-  
-  .home-typing-animation {
-    margin-top: 0%; 
-    margin-left: 0.7%;
-  }
-  
-  .home-contact-icons {
-    bottom: 0%;
-    flex-direction: row; 
-  }
-  
-  .home-contact-icons a {
-    margin-top: 5%;
-    margin-right: 2%;
-    padding: 2%;
   }
 }

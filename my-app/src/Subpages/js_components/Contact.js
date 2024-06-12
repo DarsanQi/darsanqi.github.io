@@ -1,3 +1,4 @@
+import HackingAnimation from '../../TextEffects/HackingAnimation';
 
 const Contact = () => {
   return (
@@ -5,7 +6,7 @@ const Contact = () => {
       <div className="contact-background-image"></div>
       <div className="contact-container">
         <div className="contact-form-container">
-          <h1>Let's Connect!</h1>
+          <h1><HackingAnimation text="Let's Connect!" /></h1>
           <p>
             Please feel free to leave your contact info below, and I'll get back to you as soon as possible. I'm excited to hear from you!
           </p>
@@ -18,13 +19,13 @@ const Contact = () => {
             </div>
           </form>
           <contact-buttons>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/darsan-qi-44613920b/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/DarsanQi" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="mailto:your-email@example.com">
+            <a href="mailto:darsan.qi@mail.utoronto.ca">
               <i className="fas fa-envelope"></i>
             </a>
             <a href="tel:+1234567890">
