@@ -90,10 +90,11 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   nav {
     margin-left: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
     box-sizing: border-box;
+    font-size: 0.85em;
   }
   
   nav ul {
