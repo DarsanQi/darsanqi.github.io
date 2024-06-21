@@ -37,6 +37,7 @@ body {
   color: #000;
   background-color: #020202;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  
 }
 
 /*==================================================Header==================================================
@@ -54,7 +55,6 @@ nav {
   justify-content: center;
   align-items: center;
   color: #fff;
-  box-sizing: border-box; 
   z-index: 1000; 
 }
 

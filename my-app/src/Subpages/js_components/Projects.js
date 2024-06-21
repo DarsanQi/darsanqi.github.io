@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import HackingAnimation from '../../TextEffects/HackingAnimation';
 
-
-
 const in_progress_projects = [
   {
     title: "8 bit custom CPU",
@@ -43,8 +41,6 @@ const completed_projects = [
     description: "A personal portfolio website built using React. The creation of this website involved the self learning of React, HTML, CSS, and JavaScript, and Blender. The website is hosted on GitHub Pages.",
     github: "https://github.com/DarsanQi/NIOS-II-Rocket-Flight-Path-Simulator"
   },
-
-
 ];
 
 const Projects = () => {
@@ -73,7 +69,6 @@ const Projects = () => {
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
               <p className="project-title">{project.title}</p>
-              
             </div>
           </div>
         ))}
@@ -104,7 +99,6 @@ const Projects = () => {
               <a className="github-button" href={expandedProject.github} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i> GitHub
               </a>
-              
             </div>
           </div>
         </div>

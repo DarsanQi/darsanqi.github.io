@@ -63,6 +63,8 @@
 .project-image {
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9; 
+
 }
 
 .project-details {
@@ -88,7 +90,6 @@
 }
 
 
-/* Styles for overlay and expanded project */
 .overlay {
   position: fixed;
   top: 0%;
@@ -104,59 +105,61 @@
 
 .expanded-project {
   position: relative;
-  left:0%;
-  top: 0%;
-  width:75%;
-  aspect-ratio: 16 / 10.5882353; 
-  background-color: #2e2e2e;
-  max-height: 70%;
+  width: 75%;
+  max-height: 80%;
+  max-width: 900px;
+  background-color: #bca9a1;
+  border: 3px solid #a80de5;
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 8px;
-  
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  aspect-ratio: 16 / 10.5;
 }
 
 .expanded-project .project-image {
-  height: auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  
 }
 
 .expanded-project .project-details {
-  width: auto;
-  height: 500px;
-  top: 85%;
-  background-color: #bca9a1; 
+  margin-top: 10px;
+  border: 3px solid #a80de5;
+  background-color: #bca9a1;
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
-  padding: 0; 
-  margin: 0; 
+  width: 100%;
+  box-sizing: border-box;
+  
 }
 
 .expanded-project .project-title {
-  padding: 0;
-  margin: 0; 
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
-
+.expanded-project .project-description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
 
 .expanded-project .github-button {
-  margin-left: 30%;
-  margin-right: 30%;
   font-size: 1.2em;
   color: #fff;
   text-decoration: none;
   background-color: #333;
   border-radius: 5px;
-}
-
-.expanded-project .project-description {
-  padding: 0;
-  font-size: 1.2em;
-  line-height: 1.5;
+  padding: 10px 20px;
   text-align: center;
+  margin-top: 20px;
 }
 
 /* Desktop styles */
@@ -181,24 +184,51 @@
     padding-right: 10%;
   }
 
+  #projects p {
+    font-size: 0.8em;
+  }
+
   #projects h1 {
     font-family: 'Lato-Black', Arial, sans-serif;
     font-size: 3em;
+  }
+
+  #projects h3 {
+    font-family: 'SourceSans3', Arial, sans-serif;
+    font-size: 1.2em;
   }
 
   .projects-container {
     grid-template-columns: 1fr;
   }
 
+
   .expanded-project {
-    width: 90%;
-    aspect-ratio: 16 / 32;
+    width: 80%;
+    aspect-ratio: 16 / 18;
   }
+
+  .expanded-project .project-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .expanded-project .project-details {
+    padding: 10px;
+    padding-bottom: 54%;
+  }
+
+  .expanded-project .project-title {
+    font-size: 1.5em;
+  }
+
+  .expanded-project .project-description {
+    font-size: 1em;
+  }
+
   .project-card {
     margin-bottom: 1em;
     width: 100%;
   }
-
   .project-title {
     font-size: 1.2em;
   }
