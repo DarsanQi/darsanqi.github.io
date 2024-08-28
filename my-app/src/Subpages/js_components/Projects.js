@@ -18,6 +18,12 @@ const in_progress_projects = [
 
 const completed_projects = [
   {
+    title: "Project Alpha - ESP32 Wireless Gyroscope Controller",
+    image: "/assets/project_assets/Project_Alpha_Photo.png",
+    description: "A wireless controller built for the University of Toronto Creative Computing Association's club fair display. The controller uses an ESP32 microcontroller, a gyroscope, 5 buttons, and a potentiometer to send samples via http requests to a web server, which controls the movement and display settings of a generative terrain.",
+    github: "https://github.com/UTCCA/club-fair-display-24/tree/main/Firmware-https"
+  },
+  {
     title: "Lazy Way - GIS Mapping Application",
     image: "/assets/project_assets/LazyWay_Screenshot.png",
     description: "A GIS mapping application that tackles a trickier travelling salesman problem using a combination of the greedy algorithm, simulated annealing, 2-opt, and 3-opt. Complete with a slew of other mapping features as well as custom graphics built with CSS and GTK and EZGL libraries. Made with C++.",

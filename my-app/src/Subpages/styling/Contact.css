@@ -3,8 +3,8 @@
     padding: 2em;
     background-color: #020202;
     color: #fff;
-    overflow-y: auto; /* Ensure no overflow */
-    height: 85vh; /* Make sure the section takes up the full viewport height */  
+    overflow-y: hidden; 
+    height: 85vh;  
   }
   
   .contact-background-image {
@@ -16,8 +16,8 @@
     background-image: url('/public/assets/background_images/contact_flower.jpg');
     background-size: cover; 
     background-position: center; 
-    background-size: contain; /* Shrink the image without cropping */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: contain; 
+    background-repeat: no-repeat; 
     z-index: 1; 
     opacity: 1; 
     overflow-y: hidden;
@@ -29,7 +29,7 @@
     flex-direction: row;
     max-width: 1200px;
     width: 100%;
-    height: 100%; /* Ensure container takes up full height */
+    height: 100%; 
     align-items: center;
     z-index: 2;
     
@@ -39,7 +39,7 @@
     
     max-width: 600px;
     width: 100%;
-    height: 100%; /* Ensure container takes up full height */
+    height: 100%; 
     z-index: 2;
     
   }
@@ -158,7 +158,7 @@
     .contact-form-container {
       margin: 0;
       width: 100%;
-      padding: 0 10%; /* Ensure 15% padding on left and right */
+      padding: 0 10%; 
       padding-top: 0;
     }
 
@@ -173,11 +173,11 @@
   
     .contact-form-container input
     {
-      width: 90%; /* Full width for inputs and textarea */
+      width: 90%; 
 
     }
     .contact-form-container textarea {
-      width: 90%; /* Full width for inputs and textarea */
+      width: 90%; 
       height: 60px;
     }
 

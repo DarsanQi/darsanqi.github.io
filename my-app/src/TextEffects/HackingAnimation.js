@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const HackingAnimation = ({ text, className }) => {
   const [displayedText, setDisplayedText] = useState('');
 
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+  const characters = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
 
   useEffect(() => {
     let currentIndex = 0;
@@ -24,7 +24,7 @@ const HackingAnimation = ({ text, className }) => {
         clearInterval(interval);
         setTimeout(() => {
           setDisplayedText(text);
-        }, 2000); // Adjust the delay duration (2000ms = 2 seconds) as needed
+        }, 1000); // Adjust the delay duration (2000ms = 2 seconds) as needed
       } else {
         currentIndex++;
       }

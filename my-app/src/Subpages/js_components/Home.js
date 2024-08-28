@@ -6,7 +6,7 @@ const Home = () => {
     <section id="home">
       <div className="home-background-image"></div>
       <h1 className="home-name"><HackingAnimation text="Darsan Qi" /></h1>
-      <p className="home-description"><HackingAnimation text="Computer Engineering @ UofT" /></p>
+      <p className="home-description"><HackingAnimation text="Computer Engineering + Robotics @ UofT" /></p>
       <div className="home-typing-animation">
         <TypingAnimation />
       </div>
