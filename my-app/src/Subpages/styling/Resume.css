@@ -1,44 +1,103 @@
+/* Container for the entire resume */
 .resume-container {
-    text-align: center;
-    margin: 0 auto;
-    padding: 2em;
-    max-width: 800px;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-  }
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  margin: 1em 0 0.5em;
+}
+
+/* Paragraph styles */
+p {
+  margin: 0.5em 0;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Each section's margin and border */
+.resume-section {
+  margin-bottom: 2em;
+  border: 1px solid #ddd;
+}
+
+/* Button styling */
+.download-button {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.5em 2em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* New CSS for the education section */
+.education-section {
+  margin-bottom: 30px;
+  padding: 2em;
+  background-color: #020202;
+  border-radius: 10px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.uni-logo {
+  width: 100%; /* Ensure full width */
+  height: 150px; /* Set an explicit height, adjust as needed */
+  background-image: url('/public/assets/background_images/UofT_Logo.png');
+  background-size: contain; /* Contain image within the div while preserving aspect ratio */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Ensure no repeating */
+  margin-bottom: 20px; /* Adjust bottom margin */
+  z-index: 1;
+}
+
+
+
+
+.education-section h2 {
   
-  h1, h2, h3 {
-    margin: 1em 0 0.5em;
-  }
-  
-  p {
-    margin: 0.5em 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .resume-section {
-    margin-bottom: 2em;
-    border: 1px solid #ddd;
-  }
-  
-  .download-button {
-    display: inline-block;
-    margin-top: 2em;
-    padding: 0.5em 2em;
-    font-size: 1em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .download-button:hover {
-    background-color: #0056b3;
-  }
-  
+
+  font-size: 5em;
+  margin-bottom: 0.5em;
+}
+
+/* Styling for education section headings */
+.education-section h3 {
+  margin-top: 200px;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraph and list items inside the education section */
+.education-section p, .education-section li {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* List inside education section */
+.education-section ul {
+  padding-left: 20px;
+}
+
+/* List style for education section */
+.education-section ul li {
+  list-style-type: disc;
+}

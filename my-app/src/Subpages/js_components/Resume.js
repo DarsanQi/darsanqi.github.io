@@ -5,16 +5,18 @@ const Resume = () => {
   return (
     <>
       {/* Centered Education Section */}
-      <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-        <h2>Education</h2>
-        <div style={{ display: 'inline-block', textAlign: 'left' }}>
-          <h3>University of Toronto</h3>
-          <p>Bachelor of Applied Science in Computer/Electrical Engineering with a Minor in Mechatronics | PEY Co-op</p>
-          <p>Expected April 2027</p>
-          <p>GPA: 3.0/4.0</p>
-          <ul>
-            <li>Relevant Courses: Computer Organization, Software Design and Communication, Electronics, Digital Systems (Verilog HDL), Computer Fundamentals (C), Programming Fundamentals (C++), Circuit Analysis, Engineering Strategies And Practices</li>
-          </ul>
+      <div className="resume-container">
+        <div className="education-section">
+          <h2>Education</h2>
+          <div>
+            <div className="uni-logo"></div>
+            <h3>University of Toronto</h3>
+            <p>Bachelor of Applied Science in Computer/Electrical Engineering with a Minor in Mechatronics | PEY Co-op</p>
+            <p>Expected April 2027</p>
+            <ul>
+              <li>Relevant Courses: Computer Organization, Software Design and Communication, Electronics, Digital Systems (Verilog HDL), Computer Fundamentals (C), Programming Fundamentals (C++), Circuit Analysis, Engineering Strategies And Practices</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -22,21 +24,8 @@ const Resume = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2022 - present"
-        >
-          <h3 className="vertical-timeline-element-title">Education</h3>
-          <h4 className="vertical-timeline-element-subtitle">University of Toronto</h4>
-          <p>
-            Bachelor of Applied Science in Computer/Electrical Engineering with a Minor in Mechatronics | PEY Co-op<br/> Expected April 2027<br/> GPA: 3.0/4.0
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="May 2023 - September 2023"
         >
           <h3 className="vertical-timeline-element-title">Advanced Analytics Intern</h3>
@@ -50,8 +39,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="May 2024 - September 2024"
         >
           <h3 className="vertical-timeline-element-title">Business Applications Intern</h3>
@@ -65,8 +54,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="January 2023 - May 2023"
         >
           <h3 className="vertical-timeline-element-title">Engineering Communications Liaison</h3>
@@ -80,8 +69,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="June 2024 - Present"
         >
           <h3 className="vertical-timeline-element-title">Hardware Lead</h3>
@@ -94,8 +83,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="October 2023 - December 2023"
         >
           <h3 className="vertical-timeline-element-title">FPGA Human Benchmark</h3>
@@ -108,8 +97,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="March 2024 - April 2024"
         >
           <h3 className="vertical-timeline-element-title">Nios Orbit - Rocket Flight Path Simulator</h3>
@@ -122,8 +111,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="May 2024 - Present"
         >
           <h3 className="vertical-timeline-element-title">8-bit Central Processing Unit</h3>
@@ -136,8 +125,8 @@ const Resume = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: 'linear-gradient(135deg, #ffb6c1, #fff)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #ffb6c1' }}
           date="May 2024 - Present"
         >
           <h3 className="vertical-timeline-element-title">ESP32 Remote Controlled Vehicle</h3>
