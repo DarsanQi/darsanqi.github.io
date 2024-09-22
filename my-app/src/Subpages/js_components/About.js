@@ -28,10 +28,10 @@ const About = () => {
           </div>
           <div className="about-description">
             <p>
-              I am currently an aspiring computer engineer at the University of Toronto. I'm super passionate about embedded systems programming, electronics, and software development.
+              I am a 3rd year student studying computer engineering at the University of Toronto. I'm super passionate about embedded systems programming, firmware development, and hardware/digital electronics.
             </p>
             <p>
-              I like to spend my time working cool personal projects to hone the skills and abilities that allow me to make a lasting and meaningful impact in the real world.
+              I like to spend my time working on cool projects, learning new things, and exploring the world of technology.
             </p>
             <p>
               Please feel free to take a look at some of my projects! I hope you find them as interesting as I do.

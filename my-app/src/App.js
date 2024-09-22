@@ -4,14 +4,14 @@ import './Statics/Global.css';
 import './Subpages/styling/Home.css';
 import './Subpages/styling/About.css';
 import './Subpages/styling/Projects.css';
-import './Subpages/styling/Resume.css';
+import './Subpages/styling/Background.css';
 import './Subpages/styling/Contact.css';
 import Header from './Statics/Header';
 import Footer from './Statics/Footer';
 import Home from './Subpages/js_components/Home';
 import About from './Subpages/js_components/About';
 import Projects from './Subpages/js_components/Projects';
-import Resume from './Subpages/js_components/Resume';
+import Background from './Subpages/js_components/Background';
 import Contact from './Subpages/js_components/Contact';
 
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/background" element={<Background />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

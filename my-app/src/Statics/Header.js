@@ -6,7 +6,7 @@ function Header() {
         <li><Link to="/">home</Link></li>
         <li><Link to="/about">about</Link></li>
         <li><Link to="/projects">projects</Link></li>
-        <li><Link to="/resume">resume</Link></li>
+        <li><Link to="/background">background</Link></li>
         <li><Link to="/contact">contact</Link></li>
       </ul>
     </nav>

@@ -1,0 +1,105 @@
+/* Container for the entire resume */
+.resume-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+.education-section {
+  background-color: #020202;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.uni-logo {
+  width: 100%;
+  height: 30vh;
+  background-image: url('/public/assets/background_images/UofT_Logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.education-section p {
+  font-size: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+.education-section h2 {
+  font-family: 'Lato-Black', Arial, sans-serif;
+  font-size: 3em;
+  margin: 0;
+}
+.education-section h3 {
+  font-family: 'Lato-Black', Arial, sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+}
+.education-section p, .education-section li {
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.education-section ul {
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  padding-left: 20px;
+  text-align: left; 
+  padding-bottom: 1em;
+}
+.education-section ul li {
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  list-style-type: disc;
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 1.5em;
+    max-width: 100%;
+  }
+  
+  .education-section h2 {
+    font-size: 3em; 
+  }
+
+  .education-section h3 {
+    font-size: 1.5em;
+  }
+
+  .education-section p, .education-section li {
+    font-size: 1em; 
+  }
+
+  .uni-logo {
+    height: 150px; 
+  }
+}
+
+/* Media query for mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 1em;
+  }
+  
+  .education-section {
+    padding: 1.5em;
+  }
+  
+  .education-section h2 {
+    font-size: 2em; /* Further shrink for small devices */
+  }
+  
+  .education-section h3 {
+    font-size: 1.2em;
+  }
+
+  .education-section p, .education-section li {
+    font-size: 0.9em;
+  }
+
+  .uni-logo {
+    height: 100px; /* Smaller logo for mobile */
+  }
+}
