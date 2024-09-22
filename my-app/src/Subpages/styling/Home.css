@@ -54,6 +54,78 @@
   margin-left: 0.7%;
 }
 
+/* Add this CSS to your stylesheet */
+.btn-projects {
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent; /* Visible pinkish color */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  z-index: 10; /* Ensure it's on top of other elements */
+  position: relative; /* Make sure it stays in the flow */
+}
+
+
+
+/* Keyframes for the top arrow's bounce */
+@keyframes bounceUp {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10px at the midpoint */
+  }
+}
+
+/* Keyframes for the bottom arrow's bounce (reverse direction) */
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(10px); /* Move down by 10px at the midpoint */
+  }
+}
+
+/* Styling for the up arrow */
+.arrow-up {
+  padding-top: 1em;
+  font-size: 30px;
+  color: #ffffff; /* White color */
+  display: block;
+  text-align: center;
+  z-index: 11; /* Ensure it stays on top */
+  position: relative;
+  animation: bounceUp 1.5s infinite ease-in-out; /* Apply bounce animation */
+}
+
+/* Styling for the down arrow */
+.arrow-down {
+  padding-top: 2.5em;
+  padding-bottom: 1em;
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  z-index: 11;
+  position: relative;
+  animation: bounceDown 1.5s infinite ease-in-out; /* Apply reverse bounce animation */
+}
+
+
+
+.btn-projects:hover {
+  background-color: #90d7fb;
+}
+
+
+
 .home-contact-icons {
   display: flex;
   z-index: 2;

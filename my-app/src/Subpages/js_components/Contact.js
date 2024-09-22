@@ -79,9 +79,7 @@ const Contact = () => {
             <a href="mailto:darsan.qi@mail.utoronto.ca">
               <i className="fas fa-envelope"></i>
             </a>
-            <a href="tel:+1234567890">
-              <i className="fas fa-phone"></i>
-            </a>
+          
           </contact-buttons>
         </div>
       </div>

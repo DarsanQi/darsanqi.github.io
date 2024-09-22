@@ -24,8 +24,8 @@
 
 #projects h3 {
   font-family: 'SourceSans3', Arial, sans-serif;
-  font-size: calc(10px + 2vw);
-  margin-bottom: 5%;
+  font-size: calc(8px + 1.5vw);
+  margin-bottom: 0%;
   
 }
 
@@ -112,7 +112,7 @@
   width: 75%;
   max-height: 80%;
   max-width: 900px;
-  background-color: #bca9a1;
+  background-color: #c8c5c8;
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 8px;
@@ -131,7 +131,7 @@
 }
 
 .expanded-project .project-details {
-  background-color: #bca9a1;
+  background-color: #c8c5c8;
   color: white;
   display: flex;
   flex-direction: column;
@@ -145,6 +145,13 @@
 .expanded-project .project-title {
   margin-top: 5px;
   font-size: 1.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.expanded-project .arrow-down{
+  margin-top: -5px;
+  padding: 0;
 }
 
 .expanded-project .project-description {
@@ -163,6 +170,7 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* Desktop styles */
