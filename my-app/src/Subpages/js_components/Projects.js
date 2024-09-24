@@ -4,7 +4,7 @@ import HackingAnimation from '../../TextEffects/HackingAnimation';
 const in_progress_projects = [
   {
     title: "8 bit custom CPU",
-    image: '/assets/background_images/home_flower.jpg',
+    image: '/assets/project_assets/8bitcpu.png',
     description: (
       <>
         <p>Currently designing and constructing a fully functional 8-bit central processing unit (CPU) from scratch using 7400 series chips on breadboards. The CPU is composed of a comprehensive arithmetic logic unit (ALU) capable of performing eight operations, a 128-bit memory block, a register file with four registers, and custom-encoded operation codes. A self-assembled 10MHz clock is used to regulate the CPU’s operations, and the entire system is housed in a custom-designed, 3D-printed casing and storage unit, modeled using Fusion 360. The CPU is controlled by a comprehensive state machine to handle instruction execution.</p>
