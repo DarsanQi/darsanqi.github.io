@@ -14,7 +14,7 @@ const Home = () => {
       {/* Button to scroll to Projects section */}
       <div className="home-project-button">
         <div className="arrow-down bounce-arrow">&darr;</div> {/* Arrow pointing down */}
-        <a href="projects" className="btn-projects">View My Projects</a>
+        <a href="#/projects" className="btn-projects">View My Projects</a>
         <div className="arrow-up bounce-arrow">&uarr;</div> {/* Arrow pointing up */}
       </div>
 

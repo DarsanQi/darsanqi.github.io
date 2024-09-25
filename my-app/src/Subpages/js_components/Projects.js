@@ -14,7 +14,7 @@ const in_progress_projects = [
     github: "https://github.com/DarsanQi/8-bit-custom-CPU"
   },
   {
-    title: "ESP 32 RC Vehicle",
+    title: "ESP32 RC Vehicle",
     image: "path/to/image2.jpg",
     description: (
       <>
