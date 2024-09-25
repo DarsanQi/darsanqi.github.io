@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './Statics/Global.css';
 import './Subpages/styling/Home.css';
 import './Subpages/styling/About.css';
@@ -13,7 +13,6 @@ import About from './Subpages/js_components/About';
 import Projects from './Subpages/js_components/Projects';
 import Background from './Subpages/js_components/Background';
 import Contact from './Subpages/js_components/Contact';
-
 
 function App() {
   return (
