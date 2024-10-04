@@ -15,7 +15,7 @@ const in_progress_projects = [
   },
   {
     title: "ESP32 RC Vehicle",
-    image: "path/to/image2.jpg",
+    image: "/assets/project_assets/workinprogress.png",
     description: (
       <>
         <p>A remote-controlled vehicle developed utilizing an Xbox One controller for precise wireless control. Inputs from the controller are captured and processed via a custom Python script, converting the data into byte arrays for communication over WiFi with the ESP32 microcontroller. The ESP32 processes the incoming signals in real-time, ensuring highly accurate and responsive control of the vehicle.</p>
@@ -51,7 +51,7 @@ const completed_projects = [
   },
   {
     title: "FPGA Human Benchmark",
-    image: "path/to/image2.jpg",
+    image: "/assets/project_assets/workinprogress.png",
     description: "A reconstruction of the human benchmark tests implemented on an FPGA. The game includes a reaction time test, as well as a visual memory test. Made using Verilog.",
     github: "https://github.com/DarsanQi/FPGA-Human-Benchmark"
   },
